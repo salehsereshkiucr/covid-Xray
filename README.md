@@ -14,8 +14,6 @@ The dataset is comprised of the following X-ray images:
 
 ### Dataset Distribution
 
-The table below provides a detailed distribution of the raw and augmented datasets used in this project for training, validation, and testing:
-
 | Class Label | Raw Train | Raw Valid. | Raw Test | Augmented Train | Augmented Valid. | Augmented Test |
 |-------------|-----------|------------|----------|------------------|------------------|-----------------|
 | COVID-19    | 141       | 35         | 43       | 2820             | 700              | 43              |
@@ -26,24 +24,33 @@ The table below provides a detailed distribution of the raw and augmented datase
 
 ## Methodology
 
-The approach employed in this project involves the application of transfer learning and hyper-parameter optimization to train a variety of models. The models implemented include:
-
-- AdaBoost
-- CNN+XGBoost
-
 ### AdaBoost
 
 AdaBoost emerged as the most successful model in terms of accuracy, demonstrating the potential for ensemble learning in medical image analysis.
 
-### CNN+XGBoost
+#### AdaBoost Results
 
-This model is a hybrid approach, combining Convolutional Neural Networks (CNN) with XGBoost, showing promise in extracting features and handling classification tasks.
+| Class Label | Precision | Recall | F-1  | Accuracy |
+|-------------|-----------|--------|------|----------|
+| COVID-19    | 1         | 0.95   | 0.98 | 0.97     |
+| Normal      | 0.97      | 0.97   | 0.97 | -        |
+| Pneumonia   | 0.97      | 0.97   | 0.97 | -        |
+
+*Table IX: Results of AdaBoost algorithm.*
+
+### Transfer Learning
+
+The project also explores the effectiveness of transfer learning by combining CNN and several classifiers. combining Convolutional Neural Networks (CNN) with XGBoost, showing promise in extracting features and handling classification tasks.
+
+| Method       | Accuracy |
+|--------------|----------|
+| PCA(59)+KNN  | 0.86     |
+| PCA(59)+XGB | 0.84     |
+| XGB          | 0.88     |
+
+*Table II: Results of transfer learning.*
+
 
 ## Augmented Data and Self-Supervised Learning
 
 The project also delves into testing the models with augmented data and discusses the prospects of self-supervised learning. The exploration points towards the possibility that, given a larger dataset, self-supervised learning could play a pivotal role in enhancing the model's performance.
-
-## Conclusion and Future Work
-
-The report concludes that the current models, if supplied with more data, can be trained to detect COVID-19 cases with higher accuracy. This study serves as a stepping stone towards the development of more refined and accurate models for detecting COVID-19 through X-ray images, thereby contributing to the ongoing efforts against the pandemic.
-
