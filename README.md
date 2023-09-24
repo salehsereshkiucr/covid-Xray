@@ -4,6 +4,8 @@
 
 This project is an exploration into the capabilities of utilizing X-ray images for the detection of COVID-19 cases. Leveraging a robust dataset and advanced machine learning techniques, the endeavor aims to lay the groundwork for improved diagnostic procedures and enhance our understanding of how imaging can contribute to tackling the pandemic.
 
+![sample X-Ray](./Xrays.png)
+
 ## Dataset
 
 The dataset is comprised of the following X-ray images:
