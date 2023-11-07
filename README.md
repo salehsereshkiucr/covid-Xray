@@ -40,6 +40,8 @@ AdaBoost emerged as the most successful model in terms of accuracy, demonstratin
 
 *Table IX: Results of AdaBoost algorithm.*
 
+![ada boost](./ada)
+
 ### Transfer Learning
 
 The project also explores the effectiveness of transfer learning by combining CNN and several classifiers. combining Convolutional Neural Networks (CNN) with XGBoost, showing promise in extracting features and handling classification tasks.
@@ -52,6 +54,9 @@ The project also explores the effectiveness of transfer learning by combining CN
 
 *Table II: Results of transfer learning.*
 
+![PCA on pooled ouput](./pca)
+
+![performance](./acc)
 
 ## Augmented Data and Self-Supervised Learning
 
