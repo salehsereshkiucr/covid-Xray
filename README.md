@@ -40,7 +40,7 @@ AdaBoost emerged as the most successful model in terms of accuracy, demonstratin
 
 *Table IX: Results of AdaBoost algorithm.*
 
-![ada boost](./ada)
+![ada boost](./ada.png)
 
 ### Transfer Learning
 
@@ -54,9 +54,9 @@ The project also explores the effectiveness of transfer learning by combining CN
 
 *Table II: Results of transfer learning.*
 
-![PCA on pooled ouput](./pca)
+![PCA on pooled ouput](./pca.png)
 
-![performance](./acc)
+![performance](./acc.png)
 
 ## Augmented Data and Self-Supervised Learning
 
